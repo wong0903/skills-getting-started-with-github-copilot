@@ -31,6 +31,16 @@ A super simple FastAPI application that allows students to view and sign up for 
 | ------ | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
 | GET    | `/activities`                                                     | Get all activities with their details and current participant count |
 | POST   | `/activities/{activity_name}/signup?email=student@mergington.edu` | Sign up for an activity                                             |
+| DELETE | `/activities/{activity_name}/signup?email=student@mergington.edu` | Unregister from an activity                                          |
+
+## Running Tests
+
+Install the project dependencies and run the backend API tests from the repository root:
+
+```
+pip install -r requirements.txt
+pytest
+```
 
 ## Data Model
 
